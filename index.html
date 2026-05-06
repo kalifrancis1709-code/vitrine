@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vitrine</title>
+  </head>
+  <body>
+    <!--lien externe-->
+    <a href="https://kalifrancis1709-code.github.io/module2/"
+      >mon premier site</a
+    >
+    <!--lien interne-->
+    <a href="contact.html">Contactez-nous</a>
+    <a href="pages/about.html">À propos</a>
+
+    <!--lien ancre-->
+    <a href="#section-contact">Aller au contact</a>
+    <section id="section-contact">Aller au contact</section>
+
+    <!--lien email-->
+    <a href="mailto:kalifrancis1709@gmail.com">Envoyer un email</a>
+
+    <!--ouvrir un nouvel onglet-->
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+      >GitHub</a
+    >
+
+    <!--image-->
+    <a href="https://kalifrancis1709-code.github.io/module2/">
+      <img src="logo.png" alt="photo de développement d'application" />
+    </a>
+    <img
+      src="images/image dev.jpg"
+      alt="photo de dévelloppement d'application"
+      width="400"
+      height="300"
+    />
+
+    <!--image avec lien-->
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+      <img src="images/youtube.png" alt="logo youtube" />
+    </a>
+
+    <!--liste non ordonnéé-->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+
+    <!--liste imbriquée-->
+    <ul>
+      <li>
+        Front-end
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </li>
+      <li>Back-end</li>
+    </ul>
+
+    <!--liste ordonnée-->
+    <ol>
+      <li>ouvrir VS code</li>
+      <li>créer un fichier index.html</li>
+      <li>Ecrire le code</li>
+      <li>Sauvegarder</li>
+    </ol>
+
+    <!--Commencer à un numéro différent-->
+    <ol start="5">
+      <li>Cinquième étape</li>
+    </ol>
+
+    <!--liste de définition-->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language - langage de structure des pages web</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets - langage de mise en forme</dd>
+    </dl>
+
+    <!--les tableaux-->
+    <table>
+      <!--En-tête du tableau-->
+      <thead>
+        <tr>
+          <th scope="col">Technologie</th>
+          <th scope="col">Type</th>
+          <th scope="col">Niveau</th>
+        </tr>
+      </thead>
+
+      <!--Corps du tableau-->
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Langage de structure</td>
+          <td>Débutant</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Langage de style</td>
+          <td>Débutant</td>
+        </tr>
+      </tbody>
+
+      <!--Pied de tableau (optionnel)-->
+      <tfoot>
+        <tr>
+          <td colpsan="3">Total : 2 technologies</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--Formulaire-->
+    <form action="/soumettre" method="POST">
+      <!--Les champs des formulaire vont ici-->
+      <!-- toujours associer un label à chaque champ (accessibilité) -->
+      <label for="nom">Nom complet</label>
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Jean Dupont"
+        required
+      />
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- action : URL vers laquelle les données sont envoyées 
+     method : GET (données dans l'URL) ou POST (données cachées dans le corps) -->
+
+    <!--zone de texte multiligne-->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+    <!--liste déroulante-->
+    <label for="pays">pays</label>
+    <select id="pays" name="pays">
+      <option value="">--choisir--</option>
+      <option value="tg">Togo</option>
+      <option value="fr">France</option>
+      <option value="sn">>Sénégal</option>
+    </select>
+
+    <!--case à ccocher-->
+    <fieldset>
+      <legend>Compétence</legend>
+      <label> <input type="checkbox" name="comp" value="html" />HTML </label>
+      <label> <input type="checkbox" name="comp" value="CSS" />CSS </label>
+    </fieldset>
+
+    <!--Bouton radio-->
+    <fieldset>
+      <legend>Niveau</legend>
+      <label><input type="radio" name="niveau" value="début" /> Débutant</label>
+      <label
+        ><input type="radio" name="niveau" value="inter" /> Intermédiaire</label
+      >
+    </fieldset>
+
+    <!--bouttons-->
+    <button type="submit">Envoyer</button>
+    <button type="rest">Réinitialiser</button>
+    <button type="button" onclick="...">Action</button>
+  </body>
+</html>
