@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Découverte du CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color:#fb0808;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 20px;
+        /* border-width: 10px;
+        border-color: brown;
+        border-style: dashed;
+        width: 50%; */
+        border: 10px dashed #a52a2a;
+        width: 50%;
+        border-top-left-radius: 50%;
+      "
+    >
+      Couleur de fond
+    </div>
+    <div style="background-color: crimson; color: white">Conteneur 1</div>
+    <div style="background-color: green; color: white">Conteneur 2</div>
+    voici une ligne en cours d'édition:
+    <p style="background-color: gray">puis on ajoute un paragraphe</p>
+    <span style="background-color: aqua">span 1</span>
+    <span style="background-color: burlywood">span 2</span>
+    un peu de texte <span style="background-color: chocolate">span 3</span>
+    <span style="display: none">span 4</span>
+    <span style="visibility: hidden">span 5</span>Encore un peu de texte.
+    <div>Les flex box</div>
+    <div
+      style="
+        width: 50%;
+        height: 400px;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          background-color: #a52a2a;
+          width: 100px;
+          height: 50px;
+          flex-shrink: 1;
+        "
+      >
+        item 1
+      </div>
+      <div
+        style="
+          background-color: #2014a6;
+          width: 200px;
+          height: 50px;
+          flex-shrink: 0;
+        "
+      >
+        item 2
+      </div>
+      <div style="background-color: #0bc640; width: 100px; height: 50px">
+        item 3
+      </div>
+      <div
+        style="
+          background-color: #bdf409;
+          width: 100px;
+          height: 50px;
+          flex-grow: 1;
+        "
+      >
+        item 4
+      </div>
+    </div>
+  </body>
+</html>
