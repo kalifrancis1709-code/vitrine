@@ -1,0 +1,84 @@
+:root {
+  /* pallette de couleur */
+  --couleur-primaire: #1a6bff;
+  --couleur-secondaire: #7c3aed;
+  --couleur-texte: #111827;
+  --couleur-fond: #f9fafb;
+  --couleur-bord: #e5e7eb;
+
+  /* typographie */
+  --police-principale: arial, sans serif;
+  --taille-base: 16px;
+  --hauteur-ligne: 1.7;
+
+  /* Espacements */
+  --espace-sm: 8px;
+  --espace-md: 16px;
+  --espace-lg: 24px;
+  --espace-xl: 48px;
+
+  /* Bordures */
+  --rayon-md: 8px;
+  --rayon-lg: 12px;
+  --rayon-xl: 16px;
+}
+
+/* Utilisation */
+button {
+  background-color: var(--couleur-primaire);
+  padding: var(--espace-sm) var(--espace-md);
+  border-radius: var(--rayon-md);
+  /* Valeur de secours si la variable n'existe pas */
+  color: var(--couleur-accent, #ffffff);
+}
+
+button {
+  background-color: var(--couleur-primaire);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px dashed #111827;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: center;
+}
+
+/* .card:nth-child(even) {
+  background-color: brown;
+}
+
+.card:nth-child(odd) {
+  background-color: violet;
+} */
+
+.card:not(.exclu) {
+  background-color: gray;
+}
+
+h2::before {
+  content: "→ ";
+  color: var(--couleur-primaire);
+}
+
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Script MT";
+}
+
+input::placeholder {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,40 @@
+:root {
+  --couleur-primaire: #6618f7;
+}
+
+button {
+  background-color: var(--couleur-primaire);
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 20px;
+  width: 200px;
+  transition:
+    background-color 5s ease,
+    transform 2s ease;
+}
+
+button:hover {
+  background-color: #89b0f8;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@keyframes apparaitre {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  margin: 20px;
+  animation: apparaitre 10s ease forwards;
+}
